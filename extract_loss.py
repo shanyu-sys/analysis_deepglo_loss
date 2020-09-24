@@ -20,8 +20,8 @@ def extract_num(line):
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-filename", help="log name", default="/home/shan/01_KPI4_default.log")
-parser.add_argument("-output_path", help="output folder")
+parser.add_argument("--filename", "-f", help="log name", default="/home/shan/01_KPI4_default.log")
+parser.add_argument("--output_path", "-o", help="output folder")
 args = parser.parse_args()
 
 filename = args.filename
